@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="css/login1.css">
+    </head>
+    
+    <body>
+        <div class="login">
+            <div class="lform animated bounce">
+                <form action="LoginServlet" method="post">
+                    <img src="image/login.png" width="100px" height="100px">
+                    <legend>Login</legend>
+                    Email ID :
+                    <input type="text" name="mail" placeholder="Enter Email" required><br>
+                    Password :
+                    <input type="password" name="pwd" placeholder="Enter Password" required><br>
+                    Account Type
+                    <select name="type">
+                        <option value="employee">Employee</option>
+                        <option value="humanresource">Human Resource</option>
+                    </select>
+                    <input type="submit"  name="sb" value="Login">
+                    <p>New To Human Resource Management?</p>
+                </form>
+                <a href="signup.html"><button>Sign Up</button></a>
+            </div>
+        </div>
+    </body>
+</html>

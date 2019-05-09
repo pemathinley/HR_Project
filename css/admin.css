@@ -1,0 +1,709 @@
+body
+{
+    background-image: url("../image/road.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.mybody
+{
+    background-color: rgba(0,0,0,0.4);
+    height: 100%;
+    display: flex;
+}
+
+.fa
+{
+    position: relative;
+    display: table-cell;
+    width: 60px;
+    height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+    padding: 15px 0px 15px 0px;                
+}
+
+
+.main-menu:hover   
+{
+    width: 250px;
+    overflow: visible;
+}
+
+
+.main-menu
+{
+    background: #212121;
+    border-right: 1.2px solid white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    width: 70px;
+    overflow: hidden;
+    transition: width 0.5s linear;
+    z-index: 1000;
+    -webkit-transform:translateZ(0) 
+    scale(1,1);
+
+}
+
+.main-menu button i
+{
+    font-size: 30px;
+}
+
+.main-menu button
+{
+    background-color: rgba(0,0,0,0);
+    border: none;
+    outline: none;
+    position: relative;
+    display: block;
+    width: 250px;
+    display: table;
+    color: #999;
+    font-family: arial;
+    text-transform: uppercase;
+}
+
+.logout
+{
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 250px;
+    display: table;
+    color: #999;
+    font-family: arial;
+    text-transform: uppercase;
+    
+}
+
+.main-menu .nav-icon
+{
+    position: relative;
+    display: table-cell;
+    width: 60px;
+    height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+
+}
+
+.nav-text
+{
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    width: 190px;
+    font-family: tahoma;
+}
+
+.logout span
+{
+    font-size: 13px;
+    position: relative;
+    left: 50px;
+}
+
+nav ul,nav li
+{
+    outline: 0;
+    margin: 0;
+    padding: 0;                
+}
+
+.main-menu button:hover,
+.logout:hover
+{
+    color: white;
+    background-color: #5fa2db;
+}
+
+
+/*main-menu-1 for panel*/
+.main-menu-1
+{
+    height: 610px;
+    width: 67.5%;
+    background-color: rgba(0,0,0,0);
+    position: relative;
+    top: 25px;
+    left: 100px;
+    display: none;
+}
+
+/*admin info*/
+.dashboard
+{
+    height: 100%;
+    width: 23%;
+    background-color: #212121;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+}
+
+
+.admin-info img
+{
+    position: relative;
+    top: 100;
+    left: 90;
+}
+
+.admin-details
+{
+    color: white;
+    position: relative;
+    top: 100;
+    left: 50;
+}
+
+/*create employee*/
+.ctEmp
+{
+    height: 8%;
+    outline: none;
+}
+
+.ctEmp button
+{
+    border: none;
+    outline: none;
+    width: 33.33%;
+    height: 100%;
+    color: white;
+    background-color:#212121;
+    font-family: sans-serif;
+    float: left;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    font-size: 18px;
+}
+
+
+.ctPanel
+{
+    height: 92%;
+    color: white;
+    display: none;
+    
+}
+
+
+/*add employee*/
+#addEmp
+{
+    background-color: white;
+    display: flex;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 100;
+    width: 85%;
+    height: 90%;
+    position: relative;
+    top: 30px;
+    left: 75px;
+    box-sizing: border-box;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+#addEmp form input , #addEmp form select  
+{
+    background-color: #B3B6B7;
+    margin: 10px 0px 0px 0px;
+    padding: 12px 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+#addEmp form input[name="nm"]
+{
+    margin-left: 42px;
+}
+
+#addEmp form input[value="male"]
+{
+    margin-left: 110px;
+    color: grey;
+}
+
+#addEmp form input[value="female"]
+{
+    margin-left: 10px;
+    color: grey;
+}
+
+#addEmp form input[value="other"]
+{
+    margin-left: 10px;
+    color: grey;
+}
+
+#addEmp form input[name="desg"]
+{
+    margin-left: 76px;
+}
+
+#addEmp form input[name="mail"]
+{
+    margin-left: 120px;
+}
+
+#addEmp form input[name="cont"]
+{
+    margin-left: 106px;
+}
+#addEmp form input[name="pwd"]
+{
+    margin-left: 90px;
+}
+
+#addEmp form input[name="addr"]
+{
+    margin-left: 102px;
+}
+
+#addEmp form select[name="type"]
+{
+    margin-left: 64px;
+    color: grey;
+    width: 230px;
+}
+
+#addEmp form input[type="submit"]
+{
+    color: white;
+    background-color: crimson;
+    padding: 12px 50px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*add salary*/
+#addSal
+{
+    background-color: white;
+    display: flex;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 100;
+    width: 85%;
+    height: 90%;
+    position: relative;
+    top: 30px;
+    left: 75px;
+    box-sizing: border-box;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+#addSal form input
+{
+    background-color: #B3B6B7;
+    margin: 10px 0px 0px 0px;
+    padding: 12px 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+#addSal form input[name="nm"]
+{
+    margin-left: 42px;
+}
+
+#addSal form input[name="mail"]
+{   
+    margin-left: 120px;
+}
+
+#addSal form input[name="desg"]
+{
+    margin-left: 76px;
+}
+
+#addSal form input[name="basic"]
+{
+    margin-left: 120px;
+}
+
+#addSal form input[type="submit"]
+{
+    color: white;
+    background-color: crimson;
+    padding: 12px 50px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*create attendance*/
+ #addAttd
+{
+    background-color: white;
+    display: flex;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 100;
+    width: 85%;
+    height: 90%;
+    position: relative;
+    top: 30px;
+    left: 75px;
+    box-sizing: border-box;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+#addAttd form input
+{
+    background-color: #B3B6B7;
+    margin: 10px 0px 0px 0px;
+    padding: 12px 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+#addAttd form input[name="nm"]
+{
+    margin-left: 42px;
+}
+
+#addAttd form input[name="mail"]
+{   
+    margin-left: 120px;
+}
+
+#addAttd form input[name="tday"]
+{
+    margin-left: 86px;
+}
+
+#addAttd form input[name="pday"]
+{
+    margin-left: 105px;
+}
+
+#addAttd form input[type="submit"]
+{
+    color: white;
+    background-color: crimson;
+    padding: 12px 50px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}   
+
+/*delete employee*/
+
+#delEmp
+{
+    background-color: white;
+    display: flex;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 100;
+    width: 85%;
+    height: 60%;
+    position: relative;
+    top: 100px;
+    left: 75px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+#delEmp form input
+{
+    background-color: #B3B6B7;
+    margin: 10px 0px 0px 0px;
+    padding: 12px 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+#delEmp form input[type="submit"]
+{
+    color: white;
+    background-color: crimson;
+}
+
+/*updates*/
+.upEmp
+{
+    height: 8%;
+    outline: none;
+    
+}
+
+.upEmp button
+{
+    color: white;
+    border: none;
+    outline: none;
+    width: 50%;
+    height: 100%;
+    background-color:#212121;
+    font-family: sans-serif;
+    float: left;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    font-size: 18px;   
+}
+
+.upPanel
+{
+    height: 92%;
+    color: white;
+    display: none;
+}
+
+/*view information*/
+.viewEmp
+{
+    height: 8%;
+    outline: none;
+    
+}
+
+.viewEmp button
+{
+    color: white;
+    border: none;
+    outline: none;
+    width: 33.3%;
+    height: 100%;
+    background-color:#212121;
+    font-family: sans-serif;
+    float: left;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    font-size: 18px;   
+}
+
+.viewPanel
+{
+    height: 85%;
+    color: white;
+    display: none;
+}
+
+
+/*emp info*/
+.showEmp
+{
+    display: flex;
+    width: 100%;
+}
+
+#ve
+{
+    width: 50%;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #494B4B;
+    height: 9%;
+}
+#ve p
+{
+    position: relative;
+    left: 150px;
+}
+    
+#se
+{
+    width: 50%;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;    
+    background-color: #494B4B;
+    height: 9%;
+}
+
+#se p
+{
+    position: relative;
+    left: 150px;
+}
+
+.empPanel
+{
+    color: white;
+    height: 100%;
+    display: none;
+}
+
+.disAllEmp
+{
+    height: 10%;
+    width: 100%;
+}
+
+.disAllEmp button
+{
+    height: 40px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: dodgerblue;
+    width: 300px;
+    position: relative;
+    top: 20px;
+    left: 300px;
+    border-radius: 10px;
+}
+
+
+.disEmp
+{
+    height: 10%;
+}
+
+.disEmp form input[type="text"]
+{
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 300px;
+    position: relative;
+    top: 20px;
+    left: 300px;
+    text-align: center;
+}
+
+
+/*show sal info*/
+.showSal
+{
+    display: flex;
+    width: 100%;
+}
+.salPanel
+{
+    color: white;
+    height: 100%;
+    display: none;
+}
+
+/*show attendance info*/
+.showAttd
+{
+    display: flex;
+    width: 100%;
+}
+.attdPanel
+{
+    color: white;
+    height: 100%;
+    display: none;
+}
+
+
+/*notice*/
+#notice-div
+{
+    background-color: white;
+    display: flex;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 100;
+    width: 85%;
+    height: 60%;
+    position: relative;
+    top: 100px;
+    left: 75px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+#notice-div form input
+{
+    background-color: #B3B6B7;
+    margin: 10px 0px 0px 0px;
+    padding: 12px 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+#notice-div form textarea
+{
+    background-color: #B3B6B7;
+    margin: 10px 0px 0px 0px;
+    padding: 12px 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+#notice-div form textarea[name="notices"]
+{
+    height: 200px;
+    width: 300px;
+}
+
+#notice-div form input[type="submit"]
+{
+    color: white;
+    background-color: crimson;
+}
+
+
+/*calulate salary*/
+.salCal
+{
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 100;
+    width: 85%;
+    height: 90%;
+    position: relative;
+    top: 30px;
+    left: 75px;
+    box-sizing: border-box;
+    padding: 50px;
+    border-radius: 10px;  
+}
+
+.salCal button
+{
+    position: absolute;
+    top: 15;
+    left: 135;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    width: 500px;
+    height: 50px;
+    background-color: crimson;
+}
+

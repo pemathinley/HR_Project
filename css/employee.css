@@ -1,0 +1,301 @@
+body {
+  font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.icon {
+  float: left;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.signin
+{
+    float: right;
+    position: relative;
+    color: white;
+    font-size: 17px;
+}
+
+.button
+{  
+    position: relative;
+    top:19px;
+}
+
+.main
+{
+  display: flex;
+    background-color: lightgrey;
+    height:800px;
+    width:100%;
+    
+}
+
+.side
+{
+    
+    width: 280px;
+    margin-left:102px;
+    height:500px;
+    
+    
+}
+.box1
+{
+    background-color: white;
+    height: 280px;
+    width:280px;
+   margin-top: 30px;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.box2
+{
+    background-color: white;
+    height: 70px;
+    width:280px;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+
+.box3
+{
+    background-color: white;
+    height: 300px;
+    width:280px;
+    margin-top: 20px;
+    text-align: center;
+   
+}
+
+.side2
+{
+    width: 830px;
+    height:600px;
+    
+    margin-left: 20px;
+    margin-top: 30px;
+   
+    
+}
+
+.top
+{
+    width:100%;
+    display: flex;
+    
+        
+}
+
+.header
+{
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    background-color: burlywood;
+}
+
+.top1
+{
+    width:400px;
+    height:150px;
+    background-color: white;
+    text-align: center;
+    
+}
+
+.top2
+{
+    width:400px;
+    height:150px;
+    background-color: white;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.display
+{
+    margin-top: 20px;
+    background-color: white;
+    width:100%;
+    height:560px;
+    text-align: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+    bottom:3px;
+    right:7px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: limegreen;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+
+#addEmp
+{
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    width: 75%;
+    height: 89%;
+    position: relative;
+    top: 30px;
+    left: 75px;
+    box-sizing: border-box;
+    padding: 50px;
+    border-radius: 10px;
+    
+}
+
+#addEmp form input , #addEmp form select, #addEmp form textarea  
+{
+    background-color: #B3B6B7;
+    margin: 10px 0px 0px 0px;
+    padding: 12px 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    
+}
+
+#addEmp form input[name="nm"]
+{
+    margin-left: 42px;
+    width:300px;
+}
+
+
+#addEmp form input[name="desg"]
+{
+    margin-left: 76px;
+    width:300px;
+}
+
+#addEmp form input[name="mail"]
+{
+    margin-left: 120px;
+    width:300px;
+}
+
+#addEmp form input[name="arri"]
+{
+    margin-left: 67px;
+    width:300px;
+}
+#addEmp form input[name="ret"]
+{
+    margin-left: 66px;
+    width:300px;
+}
+#reason
+{
+    position: relative;
+    bottom:60px;
+}
+
+#addEmp form textarea[name="res"]
+{
+    margin-left: 42.5px;
+    width:300px;
+    height:120px;
+}
+
+#addEmp form input[type="submit"]
+{
+    color: white;
+    background-color: crimson;
+    padding: 12px 50px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}

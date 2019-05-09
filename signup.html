@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>SignUp</title>
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="css/signup.css">
+        <script>
+            function myVal()
+            {
+                var pwd = document.sf.pwd.value;
+                var cpwd = document.sf.cpwd.value;
+                
+                if(pwd == cpwd)
+                    return true;
+                else
+                {
+                    alert("Password Must Be Same");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <div class="sup">
+            <div class="sform animated swing">
+                <form action="HRSignupServlet" method="post" onsubmit="return myVal()" name="sf">
+                    <img src="image/signup1.png" width="100px" height="100px">
+                    <legend>Sign Up</legend>
+                    <p id="uname">Name :</p> 
+                    <input type="text" name="nm" placeholder="Enter UserName" required><br>
+                    <p id="mails">E-Mail :</p>
+                    <input type="email" name="mail" placeholder="Enter Email" required><br>
+                    <p id="desg">Designation :</p>
+                    <input type="text" name="desg" placeholder="Enter Designation" required><br>
+                    <p id="conts">Contact :</p>
+                    <input type="text" name="cont" placeholder="Enter Contact Number" required><br>
+                    <p id="addrs">Address :</p>
+                    <input type="text" name="addr" placeholder="Enter Address" required><br>
+                    <p id="gen">Gender :</p>
+                    <input type="radio" name="gender" value="male">&nbsp;&nbsp;Male
+                    <input type="radio" name="gender" value="female">&nbsp;&nbsp;Female
+                    <input type="radio" name="gender" value="other">&nbsp;&nbsp;Other<br>                    
+                    <p id="pwds">Password :</p>
+                    <input type="password" name="pwd" placeholder="Enter Password" required pattern="(?=.*\d)(?=.*[a-z]).{6,}"><br>
+                    <p id="cpwds">Confirm Password :</p>
+                    <input type="password" name="cpwd" placeholder="Enter Confirm Password" required pattern="(?=.*\d)(?=.*[a-z]).{6,}"><br>
+                    <p id="accs"> Account Type :</p>
+                    <select name="type">
+                        <option value="employee">Employee</option>
+                        <option value="humanresource">Human Resource</option>
+                    </select>
+                    <input type="submit"  name="sb" value="Sign Up">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

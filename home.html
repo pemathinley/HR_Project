@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/home.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <h3><b>Human Resource Management</b></h3>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Jobs<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Job1</a></li>
+                        <li><a href="#">Job1</a></li>
+                        <li><a href="#">Job1</a></li>
+                        <li><a href="#">Job1</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">service1</a></li>
+                        <li><a href="#">service2</a></li>
+                        <li><a href="#">service3</a></li>
+                        <li><a href="#">service4</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="#">Events</a></li>
+            </ul>
+            <form class="navbar-form navbar-left" action="/action_page.php">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search" name="search">
+                  <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>
+        </div>
+    </nav>
+    <div class="container-fluid" >
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+          
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" >
+          
+                <div class="item active">
+                  <img src="image/i1.jpg" alt="Los Angeles" style="height:500px;width:100%;" >
+                  <div class="carousel-caption">
+                    <h1>Improving workplace Productivity.</h1>
+                    <p>Hire. Train. Retain.</p>
+                    <!-- read more button -->
+                    <input type="submit" value="read more..." class="rm">
+                  </div>
+                </div>
+          
+                <div class="item">
+                  <img src="image/i2.jpg" alt="Chicago"  style="height:500px;width:100%;">
+                  <div class="carousel-caption">
+                    <h1>Inspiring leadership innovation.</h1>
+                    <p>Hire. Train. Retain.</p>
+                    <input type="submit" value="read more..." class="rm">
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <img src="image/c1.jpg" alt="New York"  style="height:500px;width:100%;">
+                  <div class="carousel-caption">
+                    <h1>Whether we play a large or small role, by working together we achieve our objectives.</h1>
+                    <p>Hire. Train. Retain.</p>
+                    <input type="submit" value="read more..." class="rm">
+                  </div>
+                </div>
+            
+              </div>
+          
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <!-- select job -->
+        <div class="container-fluid" >
+            <div class="sj">
+              <h1>Start your job search</h1>
+              <form action="/action_page.php" method="get">
+                <input type="text" placeholder="Enter Keyword(s)">
+                <input type="text" placeholder="Location">
+                <input list="browsers" name="browser" placeholder="Select Category ">
+                <datalist id="browsers">
+                  <option value="IT">
+                  <option value="Finance">
+                  <option value="Specialists">
+                  <option value="Banking">
+                  <option value="Bussiness">
+                </datalist>
+                <input type="submit" value="Find Job" class="sub">
+              </form>
+            </div>
+        </div> 
+        <div class="container process" >
+          <h1><b>Selection Process</b></h1><br>
+          <div class="row">
+            <div class="col-xs-3" >
+              <div class="left1"><br><br><h3>IDENTIFY NEED & DEVELOP POSITION DESCRIPTION</h3></div>
+              <div class="left1"><br><br><br><h3>SOURCING & ADVERTISING</h3></div>
+            </div>
+            <div class="col-xs-6" >
+              <div class="mid">
+                <img src="image/i3.jpeg" style="height:100%;width:100%;">
+              </div>
+            </div>
+            <div class="col-xs-3" >
+              <div class="left1"><br><br><br><h3>ASSESS & INTERVIEW CANDIDATES</h3></div>
+              <div class="left1"><br><br><br><h3>RECRUITMENT PLANNING</h3></div>
+            </div>
+          </div>
+        </div>
+        <footer>
+            <div class="info">
+                <div class="calls">
+                    <i class="fa fa-phone" aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;CALL US</i> 
+                    <p>Tel. 987-654-3210 | Fax: 123-456-7890 </p>
+                </div>
+                <div class="hrline1"></div>
+                <div class="emails">
+                    <i class="fa fa-envelope-o" aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;EMAIL US</i>
+                    <p>cuhp@chitkarauniversity.edu.in</p>
+                </div>
+                <div class="hrline2"></div>
+                <div class="works">
+                    <i class="fa fa-clock-o" aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;WORKING HOURS</i>
+                    <p>Mon-Sat: 6am - 6pm</p>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+            
+            <div class="contacts">
+                <div id="cont">
+                    <h1 style="font-family:Carter One; color: white;">Contact Us</h1>
+                    <p style="font-family: Carter One; color: white;">Contact us for more information</p>
+                    
+                    <form method="post" name="cf">
+                        <input type="text"value="Name" name="name">
+                        <input type="email" value="Email" name="email">
+                        <input type="text" value="Subject" name="sub">
+                        <input type="text" value="Message" name="message">
+                        <input type="submit" value="Submit">    
+                    </form>
+                </div>
+                <div class="hrline3"></div>
+                <div id="datess">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3424.3454335201204!2d76.8701945146144!3d30.876996285717514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f8bcf4ce3b76b%3A0x21b1b0a655f62ff!2sChitkara+University+%2C+Baddi!5e0!3m2!1sen!2snl!4v1550514953962" width="550" height="415" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="infor">
+                <div class="info1 animated swing">
+                    <h3>OVER 10 YEARS EXPERIENCE</h3>
+                    <hr color="white" style="margin: -10px 0px 35px 0px;" height="2">
+                    <p style="margin-top: -10px;">Welcome To Chitkara University Himachal Pradesh. Enjoy The Ride of Chitkara.</p>
+                    <div class="icons">
+                        <img src="image/fb.jpeg">
+                        <img src="image/tw.jpeg">
+                        <img src="image/yt.jpeg">
+                        <img src="image/ig.jpeg">
+                        <img src="image/gm.jpeg">
+                        <img src="image/pi.jpeg">
+                    </div>
+                </div>
+                <div class="info2 animated swing">
+                    <h3>OUR SERVICES</h3>
+                    <hr color="white" style="margin: -10px 0px 35px 0px;" height="2">
+                    <p>-Providing Quality Service</p>
+                    <p>-Providing Overall Development</p>
+                    <p>-Providing Soft Skill</p>
+                    <p>-Providing Knowledge</p>
+                    <p>-Providing Good environment</p>
+                </div>
+                
+                <div class="info3 animated swing">
+                    <h3>VISIT US</h3>
+                    <hr color="white" style="margin: -10px 0px 35px 0px;" height="2">
+                    <p>Chitkara University</p>
+                    <p>Barotiwala,Atal Nagar</p>
+                    <p>Himachal Pradesh</p>
+                </div>
+            </div>
+            <div id="copyright">
+                <p id="p1">2019</p>
+                <i class="fa fa-copyright" aria-hidden="true"></i>
+                <p id="p2">Copyright - All Rights Reserved.</p>
+            </div>
+        </footer>
+</body>
+</html>

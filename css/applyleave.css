@@ -1,0 +1,302 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    height: 100px;
+    position: relative;
+    top:15px;
+    background: transparent;
+    padding: 15px;
+}
+/* .carousel-inner img{
+    height: 200px;
+} */
+.carousel-inner input{
+    height: 50px;
+    width: 150px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+}
+.carousel-inner input:hover{
+    background: yellowgreen;
+}
+.sj{
+    height: 200px;
+    width: 100%;
+    background: #00ff80;
+    text-align: center;
+    padding: 30px;
+}
+ .sj input{
+    height: 50px;
+    width: 250px;
+    font-size: 20px;
+    border: none;
+    padding: 10px;
+}
+
+.sj input[type="submit"]{
+    width: 150px;
+    height: 50px;
+    background: #ffb900;
+}
+.sj input[type="submit"]:hover{
+    cursor: pointer;
+    background: #37be7b;
+}
+.process{
+    text-align: center;
+    
+}
+
+.left1{
+    height: 200px;
+    margin-bottom: 10px;
+    border: 5px solid whitesmoke;
+    display: table;
+    vertical-align: middle;
+}
+.mid {
+    border: 1px solid whitesmoke;
+    height: 350px;
+    margin-top: 30px;
+}
+.left1:hover{
+    cursor: pointer;
+    background: #37be7b;
+}
+.cv{
+    background: rgba(0, 0, 0, 0.3);
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin: auto;
+}
+.input, .text_area{
+    height: 300px;
+    width: 500px;
+    float: left;
+    margin-left: 5px;
+    background: wheat;
+    position: relative;
+    left: 150px;
+}
+.info
+{
+    width: 100%;
+    background-color: rgb(220,5,5);
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.calls
+{
+    float: left;
+    color: white;
+    margin-left: 250px;
+}
+
+.info i 
+{
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.emails
+{
+    float: left;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.works
+{
+    color: white;
+}
+
+.hrline1
+{
+    width: 2px;
+    height: 80px;
+    background-color: white;
+    float: left;
+    margin-left: 53px;
+}
+
+.hrline2
+{
+    width: 2px;
+    height: 80px;
+    background-color: white;
+    float: left;
+    margin-right: 50px;
+}
+
+.contacts
+{
+    width: 100%;
+    background-color: rgb(47,51,60);
+    display: flex;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+#cont
+{
+    width: 40%;
+    background-color: rgba(0,0,0,0);
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+#cont form input[type="text"] , input[type="email"]
+{
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 10px 0px; 
+    width: 100%;    
+    border-radius: 10px;
+    background-color: rgb(30,32,36);
+}
+
+#cont form input[value="Message"]
+{
+    height: 100px;
+}
+
+#cont form input[type="text"]:hover , input[type="email"]:hover
+{
+    background-color: rgb(96,101,111);
+}
+
+#cont form input[type="submit"]
+{
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    background-color: orange;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+#cont form input[type="submit"]:hover
+{
+    background-color: rgb(48,52,61);
+}
+
+.hrline3
+{
+    background-color: white;
+    width: 1px;
+    height: 400px;
+    margin-left: 35px;
+    margin-top: 45px;
+}
+
+#datess
+{
+    width: 40%;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.infor
+{
+    height: 300px;
+    width: 100%;
+    background-color: rgb(51,57,68);
+    display: flex;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.info1
+{
+    width: 18%;
+    background-color: rgba(0,0,0,0);
+    margin: 10px 0px 0px 250px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.info1 h3 , .info2 h3 , .info3 h3
+{
+    color: white;
+    margin-top: 2px;
+}
+
+.info1 p , .info2 p , .info3 p
+{
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.icons img
+{
+    height: 10px;
+    width: 10px;
+    margin-top: 40px;
+    padding: 0px 2px;
+}
+
+.info2
+{
+    width: 17%;
+    background-color: rgba(0,0,0,0);
+    margin: 10px 0px 0px 70px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.info3
+{
+    width: 17%;
+    background-color: rgba(0,0,0,0);
+    margin: 10px 0px 0px 70px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.info1:hover , .info2:hover , .info3:hover
+{
+    background-color: rgb(30,32,36);
+}
+
+#copyright
+{
+    background-color: rgb(32,32,34);
+    height: 50px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+#copyright i
+{
+    color: white;
+    font-size: 15px;
+    margin-left: 4px;
+    margin-top: 15px;
+}
+
+#p1
+{
+    color: white;
+    font-size: 15px;
+    margin-left: 450px;
+}
+
+#p2
+{
+    color: white;
+    font-size: 15px;
+    margin-left: 4px;
+}
